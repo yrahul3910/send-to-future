@@ -34,14 +34,8 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Saved Links")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding()
-                Spacer()
-            }
+        NavigationView {
+            VStack {
                 List {
                     ForEach(self.links.indices, id: \.self) { i in
                         HStack {
@@ -69,6 +63,7 @@ struct ContentView: View {
                         }.padding()
                     }.onDelete(perform: self.deleteItems)
                 }
+            }.navigationBarTitle(Text("Saved Links"))
         }
     }
 }
