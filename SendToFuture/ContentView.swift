@@ -20,6 +20,19 @@ struct ContentView: View {
     
     @StateObject var notificationManager = NotificationManager()
     
+    func deleteItems(index: IndexSet) {
+        for i in index {
+            let currentLink = self.links[i]
+            self.moc.delete(currentLink)
+        }
+        
+        do {
+            try self.moc.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -29,33 +42,33 @@ struct ContentView: View {
                     .padding()
                 Spacer()
             }
-            ScrollView {
-                ForEach(self.links, id: \.self, content: { link in
-                    HStack {
-                        VStack {
-                            HStack {
-                                Text(link.title!)
-                                    .foregroundColor(.blue)
-                                    .font(.caption)
-                                    .bold()
-                                Spacer()
+                List {
+                    ForEach(self.links.indices, id: \.self) { i in
+                        HStack {
+                            VStack {
+                                HStack {
+                                    Text(self.links[i].title!)
+                                        .foregroundColor(.blue)
+                                        .font(.caption)
+                                        .bold()
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text("Added: " + self.links[i].added!.description)
+                                        .font(.caption2)
+                                        .foregroundColor(.gray)
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text(self.links[i].url!)
+                                        .foregroundColor(.green)
+                                    Spacer()
+                                }
                             }
-                            HStack {
-                                Text("Added: " + link.added!.description)
-                                    .font(.caption2)
-                                    .foregroundColor(.gray)
-                                Spacer()
-                            }
-                            HStack {
-                                Text(link.url!)
-                                    .foregroundColor(.green)
-                                Spacer()
-                            }
-                        }
-                        Spacer()
-                    }.padding()
-                })
-            }.padding()
+                            Spacer()
+                        }.padding()
+                    }.onDelete(perform: self.deleteItems)
+                }
         }
     }
 }
