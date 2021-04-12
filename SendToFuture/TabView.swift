@@ -19,6 +19,11 @@ struct MainTabView: View {
                     Text("History")
                 }
                 .tag("History")
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape")
+                    Text("Settings")
+                }
             AboutView()
                 .tabItem {
                     Image(systemName: "info.circle")

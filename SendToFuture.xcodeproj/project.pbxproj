@@ -22,6 +22,8 @@
 		056139BC2624E165002F4A44 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056139BB2624E165002F4A44 /* GlobalConstants.swift */; };
 		056139BF2624E167002F4A44 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056139BB2624E165002F4A44 /* GlobalConstants.swift */; };
 		056139C32624E1BB002F4A44 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056139C22624E1BB002F4A44 /* TabView.swift */; };
+		056139C72624E470002F4A44 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056139C62624E470002F4A44 /* SettingsView.swift */; };
+		056139CB2624F406002F4A44 /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056139CA2624F406002F4A44 /* NumberTextField.swift */; };
 		0588D2A225E97F24002DA71E /* SendToFutureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588D2A125E97F24002DA71E /* SendToFutureApp.swift */; };
 		0588D2A425E97F24002DA71E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588D2A325E97F24002DA71E /* ContentView.swift */; };
 		0588D2A625E97F27002DA71E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0588D2A525E97F27002DA71E /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		056139B72624E150002F4A44 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		056139BB2624E165002F4A44 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		056139C22624E1BB002F4A44 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		056139C62624E470002F4A44 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		056139CA2624F406002F4A44 /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
 		0588D29E25E97F24002DA71E /* SendToFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendToFuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0588D2A125E97F24002DA71E /* SendToFutureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendToFutureApp.swift; sourceTree = "<group>"; };
 		0588D2A325E97F24002DA71E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				0588D2AA25E97F27002DA71E /* Info.plist */,
 				0588D2A725E97F27002DA71E /* Preview Content */,
 				056139C22624E1BB002F4A44 /* TabView.swift */,
+				056139C62624E470002F4A44 /* SettingsView.swift */,
+				056139CA2624F406002F4A44 /* NumberTextField.swift */,
 			);
 			path = SendToFuture;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			files = (
 				0588D2A425E97F24002DA71E /* ContentView.swift in Sources */,
 				053B2F2726087E9100D3C61C /* LinkEntity+CoreDataClass.swift in Sources */,
+				056139CB2624F406002F4A44 /* NumberTextField.swift in Sources */,
 				0588D2A225E97F24002DA71E /* SendToFutureApp.swift in Sources */,
 				05191157262022E10000FFEA /* NotificationManager.swift in Sources */,
 				056139B82624E150002F4A44 /* AboutView.swift in Sources */,
@@ -287,6 +294,7 @@
 				05EEE8BA25EB508E00F4BC0A /* DarwinNotifications.swift in Sources */,
 				056139C32624E1BB002F4A44 /* TabView.swift in Sources */,
 				05EEE8BF25EB50BD00F4BC0A /* DarwinNotificationExtension.swift in Sources */,
+				056139C72624E470002F4A44 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
