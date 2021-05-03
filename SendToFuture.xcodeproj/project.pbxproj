@@ -30,6 +30,7 @@
 		0588D2A625E97F27002DA71E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0588D2A525E97F27002DA71E /* Assets.xcassets */; };
 		0588D2A925E97F27002DA71E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0588D2A825E97F27002DA71E /* Preview Assets.xcassets */; };
 		0588D2B325E97F5C002DA71E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0588D2B125E97F5C002DA71E /* Model.xcdatamodeld */; };
+		05B76369263FBA7E00EC1C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0588D2A525E97F27002DA71E /* Assets.xcassets */; };
 		05EEE8B525EB4F1100F4BC0A /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EEE8B425EB4F1100F4BC0A /* URLExtension.swift */; };
 		05EEE8BA25EB508E00F4BC0A /* DarwinNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EEE8B925EB508E00F4BC0A /* DarwinNotifications.swift */; };
 		05EEE8BF25EB50BD00F4BC0A /* DarwinNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EEE8BE25EB50BD00F4BC0A /* DarwinNotificationExtension.swift */; };
@@ -256,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				053B2F0F26087C8900D3C61C /* Action.js in Resources */,
+				05B76369263FBA7E00EC1C1B /* Assets.xcassets in Resources */,
 				053B2F0B26087C8900D3C61C /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +487,7 @@
 				DEVELOPMENT_TEAM = 7CMVH392CF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SendToFuture/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +511,7 @@
 				DEVELOPMENT_TEAM = 7CMVH392CF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SendToFuture/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
